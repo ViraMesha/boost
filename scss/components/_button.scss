@@ -9,7 +9,7 @@
   border-radius: 30px;
   cursor: pointer;
   letter-spacing: 0.4px;
-  transition: all var(--transition);
+  transition: background-color var(--transition);
 
   &:hover {
     background-color: var(--cl-primary-hover);
