@@ -1,0 +1,29 @@
+.input,
+.textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--cl-input-border);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--cl-black);
+
+  &::placeholder {
+    color: var(--txt-cl-placeholder);
+  }
+
+  &:focus {
+    border-bottom: 2px solid var(--cl-primary);
+  }
+}
+
+.input {
+  height: 48px;
+}
+
+.textarea {
+  min-height: 200px;
+  resize: vertical;
+}

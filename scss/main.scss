@@ -1,7 +1,16 @@
 // utils styles
+@import "./utils/variables";
+@import "./utils/mixin";
 
 // base styles
+@import "./base/reset";
+@import "./base/base";
 
 // components styles
+@import "./components/container.scss";
+@import "./components/section";
+@import "./components/headings";
+@import "./components/button";
+@import "./components/input";
 
 // layout styles

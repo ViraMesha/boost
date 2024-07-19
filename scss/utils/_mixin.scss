@@ -1,0 +1,29 @@
+@mixin breakpoints($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}

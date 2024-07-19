@@ -1,0 +1,33 @@
+:root {
+  /* fonts */
+  --font-main: "Poppins", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+
+  /* text colors */
+  --txt-cl-main: #222222;
+  --txt-cl-accent: #5375d9;
+  --txt-cl-secondary: #403939;
+  --txt-cl-third: #ffffff;
+  --txt-cl-orange: #ff6433;
+  --txt-cl-placeholder: #909090;
+
+  /* bg colors */
+
+  --cl-primary: #5375d9;
+  --cl-primary-hover: #4d6bc5;
+  --cl-primary-subtle: #eaf0ff;
+  --cl-secondary: #ff6433;
+  --cl-secondary-subtle: #febb94;
+  --cl-black: #222222;
+  --cl-body-text: #4a4a4a;
+  --cl-body-bg: #ffffff;
+  --cl-white: #ffffff;
+  --cl-input-border: #bcbcbc;
+
+  /* others */
+
+  --transition: 0.3s ease-in-out;
+
+  --card-gap: 30px;
+  --card-item: 3;
+}

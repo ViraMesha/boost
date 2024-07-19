@@ -1,0 +1,27 @@
+.btn {
+  min-width: 140px;
+  border: none;
+  background-color: var(--cl-primary);
+  text-transform: uppercase;
+  color: var(--cl-white);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  transition: all var(--transition);
+
+  &:hover {
+    background-color: var(--cl-primary-hover);
+  }
+
+  &--lg {
+    min-height: 56px;
+    padding: 0 2rem;
+  }
+
+  &--sm {
+    min-height: 48px;
+    padding: 0 1.5rem;
+  }
+}
