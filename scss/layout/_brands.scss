@@ -1,0 +1,28 @@
+.brands {
+  &__title {
+    color: var(--cl-black);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10px);
+    flex-wrap: wrap;
+
+    @include breakpoint(tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    max-height: 80px;
+
+    @include breakpoint(desktop) {
+      max-height: none;
+    }
+  }
+}
