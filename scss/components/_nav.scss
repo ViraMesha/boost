@@ -1,0 +1,81 @@
+.nav {
+  background-color: var(--cl-black);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 70vw;
+  z-index: 5;
+  transition: all var(--transition);
+
+  @include breakpoint(tablet) {
+    width: 40vw;
+  }
+
+  @include breakpoint(desktop) {
+    position: relative;
+    right: 0;
+    background: none;
+  }
+  &__close-btn {
+    width: 40px;
+    height: 40px;
+    color: var(--cl-primary);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+  &.is-open {
+    right: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(16px);
+    height: 100%;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    color: var(--cl-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--cl-primary);
+    }
+
+    @include breakpoint(desktop) {
+      color: var(--cl-black);
+      font-size: 1rem;
+    }
+  }
+}
+
+.nav-trigger {
+  cursor: pointer;
+  font-size: 2.4rem;
+  color: var(--cl-black);
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}

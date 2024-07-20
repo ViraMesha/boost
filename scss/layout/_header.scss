@@ -1,0 +1,29 @@
+.header {
+  padding: rem(20px) rem(30px);
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  min-height: 90px;
+  transition: all var(--transition);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn {
+    display: none;
+    @include breakpoint(desktop) {
+      display: block;
+    }
+  }
+
+  &.is-active {
+    background-color: var(--cl-white);
+    box-shadow: 0 1px 8px 4px rgba(83, 117, 217, 0.1);
+    transition: all var(--transition);
+    height: 80px;
+  }
+}
