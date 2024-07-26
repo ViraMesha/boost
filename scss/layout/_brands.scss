@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: rem(10px);
+    gap: rem(16px);
     flex-wrap: wrap;
 
     @include breakpoint(tablet) {

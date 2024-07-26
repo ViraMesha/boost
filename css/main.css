@@ -134,11 +134,13 @@ body {
   font-size: 48px;
   line-height: 1.4;
   letter-spacing: -2%;
+  font-weight: 600;
 }
 
 .h3 {
   font-size: 32px;
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .h4 {
@@ -491,7 +493,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.625rem;
+  gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -509,4 +511,84 @@ body {
   .brands__img {
     max-height: none;
   }
+}
+
+.benefits {
+  overflow: hidden;
+}
+.benefits__title {
+  color: var(--cl-secondary);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.benefits__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.75rem;
+}
+@media (min-width: 1200px) {
+  .benefits__content {
+    gap: 2.5rem;
+  }
+}
+
+.benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2.5rem;
+}
+@media (min-width: 1200px) {
+  .benefit {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .benefit:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+.benefit__content, .benefit__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.benefit__content {
+  padding: 0 1.25rem;
+}
+@media (min-width: 1200px) {
+  .benefit__content {
+    padding: 0 3.125rem;
+  }
+}
+.benefit__title {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .benefit__title {
+    text-align: left;
+  }
+}
+.benefit__text {
+  max-width: 30.3125rem;
 }/*# sourceMappingURL=main.css.map */
