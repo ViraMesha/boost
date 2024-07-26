@@ -23,3 +23,28 @@ window.addEventListener("scroll", () => {
     ? header.classList.add("is-active")
     : header.classList.remove("is-active");
 });
+
+const swiper = new Swiper(".swiper", {
+  speed: 400,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      spaceBetween: 40,
+      slidesPerView: 3,
+    },
+  },
+});
