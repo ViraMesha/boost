@@ -1,0 +1,48 @@
+.expertise {
+  padding-bottom: rem(40px);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: rem(60px);
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+
+  &__content,
+  &__img {
+    flex: 1;
+  }
+
+  &__content {
+    text-align: center;
+    padding: 0 rem(50px);
+
+    @media (min-width: 900px) {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: rem(0.4px);
+    margin-bottom: rem(20px);
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: 500px) {
+      display: block;
+    }
+  }
+}
