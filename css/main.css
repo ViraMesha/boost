@@ -15,6 +15,7 @@
   --cl-primary-subtle: #eaf0ff;
   --cl-secondary: #ff6433;
   --cl-secondary-subtle: #febb94;
+  --cl-light-blue: #edf2ff;
   --cl-black: #222222;
   --cl-body-text: #4a4a4a;
   --cl-body-bg: #ffffff;
@@ -148,6 +149,8 @@ body {
 .h4 {
   font-size: 24px;
   line-height: 1.4;
+  color: var(--cl-black);
+  font-weight: 700;
 }
 
 .lead {
@@ -661,7 +664,7 @@ body {
 .services__list {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1.875rem;
+  gap: 3.125rem;
 }
 @media (min-width: 800px) {
   .services__list {
@@ -671,6 +674,7 @@ body {
 @media (min-width: 940px) {
   .services__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5rem;
   }
 }
 
@@ -698,4 +702,50 @@ body {
 
 .how__title {
   margin-bottom: 2.5rem;
+}
+.how__list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.875rem;
+}
+@media (min-width: 800px) {
+  .how__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 940px) {
+  .how__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  .how__list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.how__item {
+  padding: 1.875rem;
+  background-color: var(--cl-light-blue);
+  -webkit-transition: background-color var(--transition);
+  transition: background-color var(--transition);
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .how__item {
+    max-width: 16.875rem;
+    min-height: 24.5625rem;
+  }
+}
+.how__item:hover {
+  background-color: var(--cl-secondary-subtle);
+}
+.how__item-icon {
+  width: 60px;
+  height: 60px;
+}
+.how__item-title {
+  margin: 0.625rem 0 0.375rem;
+}
+.how__item-text {
+  letter-spacing: 0.01875rem;
 }/*# sourceMappingURL=main.css.map */
