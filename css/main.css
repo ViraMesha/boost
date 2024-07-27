@@ -22,7 +22,7 @@
   --cl-input-border: #bcbcbc;
   /* others */
   --transition: 0.3s ease-in-out;
-  --card-gap: 30px;
+  --card-gap: 80px;
   --card-item: 3;
 }
 
@@ -136,6 +136,7 @@ body {
   letter-spacing: -1px;
   font-weight: 600;
   text-align: center;
+  color: var(--cl-black);
 }
 
 .h3 {
@@ -652,4 +653,49 @@ body {
   width: 15px;
   height: 15px;
   background-color: var(--cl-black);
+}
+
+.services__title {
+  margin-bottom: 2.5rem;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.875rem;
+}
+@media (min-width: 800px) {
+  .services__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 940px) {
+  .services__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.service {
+  -ms-flex-preferred-size: calc((100% - var(--card-gap)) / var(--card-item));
+      flex-basis: calc((100% - var(--card-gap)) / var(--card-item));
+}
+.service__icon {
+  display: inline-block;
+  margin-bottom: 0.625rem;
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
+}
+.service:hover .service__icon path {
+  fill: var(--cl-secondary);
+}
+.service__title {
+  font-weight: 700;
+  margin-bottom: 0.375rem;
+  color: var(--cl-black);
+}
+.service__text {
+  letter-spacing: 0.01875rem;
+}
+
+.how__title {
+  margin-bottom: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

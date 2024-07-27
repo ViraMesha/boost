@@ -1,0 +1,42 @@
+.services {
+  &__title {
+    margin-bottom: rem(40px);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: rem(30px);
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 940px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+.service {
+  flex-basis: calc((100% - var(--card-gap)) / var(--card-item));
+
+  &__icon {
+    display: inline-block;
+    margin-bottom: rem(10px);
+    transition: fill var(--transition);
+  }
+
+  &:hover &__icon path {
+    fill: var(--cl-secondary);
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: rem(6px);
+    color: var(--cl-black);
+  }
+
+  &__text {
+    letter-spacing: rem(0.3px);
+  }
+}
