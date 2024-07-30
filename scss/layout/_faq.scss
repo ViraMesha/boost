@@ -1,7 +1,7 @@
 .faq {
   &__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     gap: rem(20px);
@@ -15,14 +15,6 @@
   &__img,
   &__items {
     flex: 1;
-  }
-
-  &__img {
-    order: 1;
-
-    @media (min-width: 900px) {
-      order: 0;
-    }
   }
 
   &__title {
