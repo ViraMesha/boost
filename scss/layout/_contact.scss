@@ -8,12 +8,40 @@
 
     @media (min-width: 900px) {
       flex-direction: row;
-      align-items: flex-end;
     }
   }
 
   &__form-wrapper,
   &__img {
     flex: 1;
+  }
+
+  &__title,
+  &__text {
+    margin-bottom: rem(20px);
+
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: rem(22px);
+    line-height: 1.7;
+    letter-spacing: rem(0.4px);
+    color: var(--cl-black);
+    max-width: 90%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
+  }
+
+  &__btn {
+    @include breakpoint(tablet) {
+      max-width: 200px;
+    }
   }
 }
