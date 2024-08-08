@@ -65,3 +65,85 @@ faqItemEl.forEach((item) => {
     iconElement.classList = `${iconClass}`;
   });
 });
+
+// scroll reveal
+
+const sr = ScrollReveal({
+  origin: "bottom",
+  distance: "60px",
+  duration: 3000,
+  delay: 600,
+  reset: true,
+});
+
+// custom configurations for specific elements
+const revealFromTop = {
+  origin: "top",
+};
+
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+
+const revealFromLeft = {
+  origin: "left",
+  distance: "100px",
+};
+
+const revealFromRight = {
+  origin: "right",
+  distance: "100px",
+};
+
+const revealWithShortDistance = {
+  distance: "60px",
+};
+
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+};
+
+// hero
+sr.reveal(".hero__content", revealFromTop);
+sr.reveal(".hero__img");
+
+// brands
+sr.reveal(".brands__title", revealWithDelay);
+sr.reveal(".brands__img", revealWithInterval);
+
+// benefits
+sr.reveal(".benefits__title", revealWithShortDistance);
+sr.reveal(".benefit__content", revealFromLeft);
+sr.reveal(".benefit__img", revealFromRight);
+
+// testimonials
+sr.reveal(".testimonials__container", { distance: "100px" });
+
+// testimonials
+sr.reveal(".services__title", revealWithShortDistance);
+sr.reveal(".service", revealWithInterval);
+
+// how
+sr.reveal(".how__title", revealWithShortDistance);
+sr.reveal(".how__item", revealWithInterval);
+
+// expertise
+sr.reveal(".expertise__content", revealFromTop);
+sr.reveal(".expertise__img");
+
+// FAQ
+sr.reveal(".faq__img", {
+  distance: "100px",
+  origin: "top",
+  interval: 100,
+});
+sr.reveal(".faq__title, .faq__item", revealWithInterval);
+
+// contact
+sr.reveal(".contact__form-wrapper");
+sr.reveal(".contact__img", revealFromTop);
+
+// footer
+sr.reveal(".footer");
