@@ -1041,6 +1041,9 @@ body {
 .info {
   color: var(--cl-black);
 }
+.info a {
+  display: block;
+}
 .info__email {
   font-weight: 700;
   color: var(--cl-black);
